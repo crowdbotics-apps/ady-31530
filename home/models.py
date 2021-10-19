@@ -7,6 +7,11 @@ class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
     )
+    nombre = models.DateField(
+        auto_now_add=True,
+        null=True,
+        blank=True,
+    )
 
 
 class HomePage(models.Model):
